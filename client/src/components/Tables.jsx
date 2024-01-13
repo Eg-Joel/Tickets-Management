@@ -124,7 +124,7 @@ function Tables() {
             </tr>
           </thead>
           <tbody>
-            {/* Map through your data and render rows */}
+          
             {tickets
               .slice((page - 1) * rowsPerPage, page * rowsPerPage)
               .map((row) => (
@@ -155,7 +155,7 @@ function Tables() {
                   </td>
 
                   <td>
-                    {/* Use appropriate styling based on the priority */}
+                   
                     <Button
                       variant="contained"
                       style={{
@@ -179,7 +179,7 @@ function Tables() {
                     </Button>
                   </td>
                   <td>
-                    {/* Use appropriate styling based on the status */}
+                   
                     <Button
                       variant="contained"
                       style={{
@@ -197,7 +197,7 @@ function Tables() {
                   <td>{row.due_date}</td>
 
                   <td>
-                    {/* Action button */}
+              
                     <Button
                       variant="outlined"
                       style={{
