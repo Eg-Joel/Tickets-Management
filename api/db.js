@@ -1,7 +1,8 @@
 const {Client} = require('pg')
+const dotenv = require("dotenv")
 
-
-const connectionString = 'postgresql://postgres:joel123@localhost:5432/TicketsManagement';
+dotenv.config()
+const connectionString = process.env.PG_URL;
 const client = new Client({ connectionString });
 client.connect((err)=>{
     if(err){
