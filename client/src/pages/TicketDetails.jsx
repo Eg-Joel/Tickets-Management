@@ -22,8 +22,8 @@ function TicketDetails() {
           Tickets
         </Typography>
 
-        <Typography variant="h5" style={{}}>
-          Tickets
+        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
+            TicketDeatils
         </Typography>
       </Box>
 

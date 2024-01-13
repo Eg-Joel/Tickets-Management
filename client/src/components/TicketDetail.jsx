@@ -22,7 +22,7 @@ function TicketDetail() {
     setAge(event.target.value);
   };
 
-  const [status, setStatus] = React.useState('10');
+  const [status, setStatus] = useState('10');
 
   const handleStatusChange = (event) => {
     setStatus(event.target.value);
@@ -69,11 +69,11 @@ function TicketDetail() {
   
      
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:15,}}>
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
           Ticket Type :
         </Typography>
 
-        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:14,marginTop:4}}>
+        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
           <LocalActivityIcon style={{fontSize:18,color:'#1abc9c',}}/>  Payments
         </Typography>
    </Box>
@@ -87,7 +87,7 @@ function TicketDetail() {
 
         <Grid xs={12} sm={12} md={6}>
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:15,}}>
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
           Reported By:
         </Typography>
 
@@ -98,7 +98,7 @@ function TicketDetail() {
                         height={17}
                         style={{ borderRadius: "30px" }}
                       />
-                 <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:14,marginTop:4}}>
+                 <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
             Payments
         </Typography>
                  
@@ -118,7 +118,7 @@ function TicketDetail() {
                         height={17}
                         style={{ borderRadius: "30px" }}
                       />
-                 <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:14,marginTop:4}}>
+                 <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
             Payments
         </Typography>
                  
@@ -128,11 +128,11 @@ function TicketDetail() {
 
         <Grid xs={12} sm={12} md={6}>
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:15,}}>
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
           Created On:
         </Typography>
 
-        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:14,marginTop:4}}>
+        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
             Payments
         </Typography>
    </Box>
@@ -140,11 +140,11 @@ function TicketDetail() {
 
         <Grid xs={12} sm={12} md={6}>
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:15,}}>
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
           Created On:
         </Typography>
 
-        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:14,marginTop:4}}>
+        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
             Payments
         </Typography>
    </Box>
@@ -152,7 +152,7 @@ function TicketDetail() {
 
         <Grid xs={12} sm={12} md={6}>
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:15,}}>
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
           Status:
         </Typography>
 
@@ -162,7 +162,7 @@ function TicketDetail() {
         value={status}
         label=""
         onChange={handleStatusChange}
-        sx={{ m: 1, minWidth: 120 }} size="small"
+        sx={{ m: 1, minWidth: 120 ,height:25}} size="small"
       >
         <MenuItem value="">
         
@@ -177,7 +177,7 @@ function TicketDetail() {
         <Grid xs={12} sm={12} md={6}>
    <Box>
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:15,}}>
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
           Status:
         </Typography>
 
@@ -187,7 +187,7 @@ function TicketDetail() {
         value={status}
         label=""
         onChange={handleStatusChange}
-        sx={{ m: 1, minWidth: 120 }} size="small"
+        sx={{ m: 1, minWidth: 120,height:25 }} size="small"
       >
         <MenuItem value="">
         
@@ -202,12 +202,12 @@ function TicketDetail() {
 
         <Grid xs={12} sm={12} md={12}>
    <Box>
-   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray'}}>
-          Ticket Type :
+   <Typography variant="subtitle1" style={{fontWeight:'lighter',color:'gray',fontSize:14,}}>
+          Overview :
         </Typography>
 
-        <Typography  style={{fontWeight:'lighter',color:'gray' ,display:'flex'}}>
-          <LocalActivityIcon style={{fontSize:20,color:'#1abc9c',marginRight:2}}/> Payments
+        <Typography  style={{fontWeight:'lighter',color:'gray' ,display:'flex',fontSize:10,}}>
+        This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer. Some quick example text to build on the card title and make up the bulk of the cards content. Some quick example text to build on the card title and make up.
         </Typography>
    </Box>
         </Grid>

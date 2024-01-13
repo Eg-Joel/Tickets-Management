@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import TicketListing from "./TicketListing";
-import TicketDetails from "./TicketDetails";
+
 
 function Home() {
   return (
@@ -14,12 +14,12 @@ function Home() {
     
           bgcolor: "#f4f5f7",
           margin: 0,
-          
+          minHeight: '100vh',
           padding: '15px 15px '
         }}
       >
         <Grid container>
-          <TicketDetails />
+          <TicketListing />
         </Grid>
       </Box>
     </div>

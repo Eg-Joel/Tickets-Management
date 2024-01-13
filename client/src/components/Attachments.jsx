@@ -28,20 +28,28 @@ function Attachments() {
             >
               <Grid xs={12} sm={12} md={12}>
               {files.map((file, index)  => (
-                <Card key={index} >
+                <Card key={index} sx={{marginBottom:2}}>
                   <CardContent>
-                 
+                 <Box sx={{display:'flex',justifyContent:"space-between"}}>
+                  <Box sx={{display:'flex',gap:2}}>
                   {file.name.endsWith('.pdf') ? (
-                <img src="/path/to/pdf-icon.png" alt="PDF Icon" height={50} />
+                <img src="./pdf.png" alt="PDF Icon" height={50} />
               ) : (
-                <img src="/path/to/docx-icon.png" alt="DOCX Icon" height={50} />
+                <img src="./docs.png" alt="DOCX Icon" height={50} />
               )}
          <Typography variant="subtitle1" style={{ marginTop: 10 }}>
                 {file.name}
               </Typography>
-              <a href={file.url} download>
+                  </Box>
+                  <Box>
+                  <a href={file.url} download>
                 <GetAppIcon color="primary" style={{ marginTop: 10, cursor: 'pointer' }} />
               </a>
+                  </Box>
+                  
+                 </Box>
+                  
+             
                   </CardContent>
                 </Card>
                   ))}

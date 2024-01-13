@@ -19,12 +19,12 @@ function TicketListing() {
           flexGrow: 1,
         }}
       >
-        <Typography variant="h5" style={{}}>
+        <Typography variant="h5" >
           Tickets
         </Typography>
 
-        <Typography variant="h5" style={{}}>
-          Tickets
+        <Typography variant="caption"  style={{color:'gray' ,display:'flex',alignItems:"center",gap:8,fontSize:13,marginTop:4}}>
+            TicketList
         </Typography>
       </Box>
       <Box sx={{ marginTop:2}}>
@@ -32,9 +32,9 @@ function TicketListing() {
       <Grid
         container
         spacing={{ xs: 2, md: 2 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
+        columns={{ xs: 12, sm: 8, md: 12 }}
       >
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
         <Cards
         icon={SellOutlinedIcon}
         backgroundColor="#6658dd"
@@ -43,7 +43,7 @@ function TicketListing() {
         content="Total Tickets"
       />
         </Grid>
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
         <Cards
         icon={QueryBuilderOutlinedIcon}
         backgroundColor="#f7b84b"
@@ -53,7 +53,7 @@ function TicketListing() {
       />
         </Grid>
 
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
         <Cards
         icon={TaskAltOutlinedIcon}
         backgroundColor="#1abc9c"
@@ -63,7 +63,7 @@ function TicketListing() {
       />
         </Grid>
 
-        <Grid xs={2} sm={4} md={3}>
+        <Grid xs={12} sm={4} md={3}>
         <Cards
         icon={DeleteForeverOutlinedIcon}
         backgroundColor="#f1556c"
