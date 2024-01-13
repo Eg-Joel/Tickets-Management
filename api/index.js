@@ -1,12 +1,11 @@
 const express = require("express")
 const app = express()
-const dotenv = require("dotenv")
+
 const cors = require("cors")
 const userRouter = require("./routes/userRouter")
 const ticketRouter = require("./routes/ticketRouter")
 
 
-dotenv.config()
 
 const db = require('./db');
 
